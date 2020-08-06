@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "CopyLinks",
+  "version": "1.0",
+  "description": "Copy Links by clicking on the extension button and paste into a txt file",
+  "icons": {
+    "94": "icons/iconCL.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "downloads",
+    "downloads.open",
+    "menus"
+  ],
+  "browser_action":{
+    "default_icon":"icons/iconCL.png",
+    "default_title":"CopyCat"
+  },
+  "background": {
+    "page":"background.html"
+  }
+
+}
